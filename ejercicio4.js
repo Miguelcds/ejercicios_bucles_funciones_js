@@ -20,7 +20,7 @@ const cartoons = [
   
   let Older = [];
   
-  let min = 3000;
+  let min = Infinity;
   
   
   for (const item of cartoons) {
