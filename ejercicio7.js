@@ -17,19 +17,19 @@ const tracks = [
   
   // Añade tu código de bucle aquí
   
-  let genreClass = {};
-  
-  
-  for (const item of tracks) {
-  
-    if (!genreClass[item.genre]) {
-      genreClass[item.genre] = [];
-    }
-  
-    genreClass[item.genre].push(item.title)
-  
+  let OrderBgenre = {};
+
+
+for (const item of tracks) {
+
+  // si item no(! negando ) tiene el item.genre en su interior, lo creas 
+  if (!OrderBgenre[item.genre]) {
+    OrderBgenre[item.genre] = [];
   }
-  
-  
-  
-  console.log(genreClass);
+
+OrderBgenre[item.genre].push(item.title)
+
+
+}
+
+console.log(OrderBgenre);
