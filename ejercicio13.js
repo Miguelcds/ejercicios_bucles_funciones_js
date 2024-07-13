@@ -14,6 +14,8 @@ const actors = [
   function calculateActorsAges(actors) {
   
     let result = {};
+
+    const currentYear = new Date().getFullYear()
     
   for (const item of actors) {
     
@@ -21,7 +23,7 @@ const actors = [
       result[item.name] = []
     }
     
-    result[item.name].push( "Edad : " + (2024 - item.born))
+    result[item.name].push( "Edad : " + (currentYear - item.born))
   
   }
   
