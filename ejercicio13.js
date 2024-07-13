@@ -15,7 +15,7 @@ const actors = [
   
     let result = {};
 
-    const currentYear = new Date().getFullYear()
+    const currentYear = Date.getFullYear()
     
   for (const item of actors) {
     
